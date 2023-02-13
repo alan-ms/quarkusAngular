@@ -25,7 +25,7 @@ $ cd quarkusAngular
 
 Aplicação vai estar disponível para uso após o Docker Compose rodar a aplicação na url: [http://localhost](http://localhost)
 
-**Obs:** Nos testes locais ocorreu um problema de memória ram ao subir o ambiente via Docker Compose no build do back-end, então sugiro alterar em **settings -> preferences** a quantidade de memória RAM disponível para docker, passando de preferência para 8GB evitando assim qualquer problema para rodar a aplicação.
+**Obs:** Nos testes locais ocorreu um problema de memória ram ao subir o ambiente via Docker Compose no build do back-end, então sugiro alterar em **settings -> preferences** do docker a quantidade de memória RAM disponível, passando de preferência para 8GB evitando assim qualquer problema para rodar a aplicação.
 
 ## História de Usuário
 
