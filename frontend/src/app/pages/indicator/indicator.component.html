@@ -8,6 +8,7 @@
   </div>
   <div class="table-result">
     <table mat-table matSort [dataSource]="dataSourceContries">
+
       <ng-container matColumnDef="date">
         <th mat-header-cell mat-sort-header *matHeaderCellDef> Data </th>
         <td mat-cell *matCellDef="let indicator"> {{indicator.date}} </td>
@@ -16,11 +17,6 @@
       <ng-container matColumnDef="indicator">
         <th mat-header-cell mat-sort-header *matHeaderCellDef> Indicador </th>
         <td mat-cell *matCellDef="let indicator"> {{indicator.value || 'Não encontrado'}} </td>
-      </ng-container>
-
-      <ng-container matColumnDef="unit">
-        <th mat-header-cell *matHeaderCellDef> Unidade </th>
-        <td mat-cell *matCellDef="let indicator"> {{indicator.unit}} </td>
       </ng-container>
 
       <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>

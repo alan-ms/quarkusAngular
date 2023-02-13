@@ -17,7 +17,7 @@ import { IIndicator } from 'src/app/model/indicator.model';
 })
 export class IndicatorComponent implements OnInit  {
   isLoading = true;
-  columnsToDisplay = ['date', 'indicator', 'unit'];
+  columnsToDisplay = ['date', 'indicator'];
   dataSourceContries = new MatTableDataSource<IIndicator>([]);
 
   countryId: string = '';
