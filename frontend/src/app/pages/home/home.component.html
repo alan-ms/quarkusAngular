@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="header">
+    <img src="assets/world-bank-image.jpg">
+    <h1>Pesquisa de Indicador de Probreza</h1>
+  </div>
+  <form class="form-search" [formGroup]="searchForm" (ngSubmit)="searchIndicator()">
+    <mat-form-field>
+      <mat-label>Digite o nome do País</mat-label>
+      <input class="search-input" type="text" matInput formControlName="countryId" [matAutocomplete]="auto" required>
+      <input type="text" formControlName="countryName" hidden>
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let country of filteredCountries | async" [value]="country.id">{{country.id}} - {{country.name}}</mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+    <button mat-button type="submit" [disabled]="searchForm.invalid || searchForm.get('countryId').value == '' || isError" [routerLink]="['/indicator']" [queryParams]="{ countryId: searchForm.get('countryId')?.value }">Buscar</button>
+  </form>
+</div>
