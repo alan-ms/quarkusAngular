@@ -1,23 +1,28 @@
 <div align="center">
-  # Quarkus - Angular
-<div>
+  Quarkus - Angular
+  
+</div>
 
 ## Instalação
   - [Git](https://git-scm.com/)
   - [Docker](https://www.docker.com/get-started)
-  - [Docker-Compose](https://docs.docker.com/compose/install/)
+  - [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## Clone do repositório
 ```
-$ git clone 
-$ cd apiQuarkus
+$ git clone https://github.com/alan-ms/quarkusAngular.git
+$ cd quarkusAngular
 ```
 
-## Rodar rodar o ambiente 
+## Rodando a aplicação via Docker Compose 
 
 ```
   $ docker-compose up --build
 ```
+
+Aplicação vai estar disponível para uso após o Docker Compose subir o ambiente na url: [http://localhost](http://localhost)
+
+**Obs:** Nos testes locais ocorreu um problema de memória ram ao subir o ambiente via Docker Compose no build do back-end, então sugiro alterar em **settings -> preferences** a quantidade de memória RAM disponível para docker, passando de preferência para 8GB evitando assim qualquer problema ao subir o ambiente.
 
 ## História de Usuário
 
@@ -25,7 +30,7 @@ $ cd apiQuarkus
    Eu como usuário quero poder digitar código do país e obter os seus indicadores de probreza ordenados por ano.  
 </p>
 
-## Critérios de Aceitação - Usando BDD (B)
+## Critérios de Aceitação - Usando BDD
 
 ### Cenário 1
   Cenário: Usuário digita o código do país
