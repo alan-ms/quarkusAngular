@@ -5,6 +5,6 @@ RUN npm install --legacy-peer-deps
 COPY . .
 RUN npm run build --prod
 
-FROM --platform=linux/amd64 nginx:1.22.1
+FROM --platform=linux/amd64 nginx:1.22.1 as runtime
 COPY --from=build /app/dist/frontend /usr/share/nginx/html
 EXPOSE 80
