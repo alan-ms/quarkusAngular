@@ -33,7 +33,7 @@ Aplicação vai estar disponível para uso após o Docker Compose rodar a aplica
    Eu como usuário quero poder digitar código do país e obter os seus indicadores de probreza ordenados por ano.  
 </p>
 
-## Critérios de Aceitação - Usando BDD
+## Critérios de Aceitação - BDD
 
 ### Cenário 1
   - Cenário: Usuário digita o código do país
